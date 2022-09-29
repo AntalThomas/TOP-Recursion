@@ -12,7 +12,11 @@ def fibs(x)
 end
 
 def fibsRec(x)
-
+    x <= 1 ? x : fibsRec(x - 1) + fibsRec(x - 2)
 end
 
 puts fibs(8)
+puts "fibs ↑ fibsRec ↓"
+puts fibsRec(8)
+
+# I know whats happening but its annoying
